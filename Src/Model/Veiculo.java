@@ -17,6 +17,7 @@ public abstract class Veiculo {
         this.ano = ano;
         this.cor = cor;
         this.preco = preco;
+        this.disponivel = true;
     }
 
     public String getChassi(){return chassi;}

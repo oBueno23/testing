@@ -1,10 +1,7 @@
 package Src.View;
 
 import Src.Controller.*;
-import Src.Model.Cliente;
-import Src.Model.Veiculo;
 
-import java.util.PrimitiveIterator;
 import java.util.Scanner;
 
 public class MenuPrincipal {
@@ -12,7 +9,7 @@ public class MenuPrincipal {
     private VeiculoController veiculoController;
     private VendaController vendaController;
     private TestDriveController testDriveController;
-    private FinanceiroView financeiroController;
+    private FinanceiroController financeiroController;
 
     private ClienteView clienteView;
     private VeiculoView veiculoView;
@@ -37,6 +34,7 @@ public class MenuPrincipal {
 
         this.scanner = new Scanner(System.in);
     }
+
     public void exibirMenu() {
         int opcao;
 
@@ -83,3 +81,4 @@ public class MenuPrincipal {
         menu.exibirMenu();
     }
 }
+
