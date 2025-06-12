@@ -2,6 +2,7 @@ package Src.Controller;
 
 import Src.Interface.Gerenciavel;
 import Src.Model.Cliente;
+import Src.Util.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ public class ClienteController implements Gerenciavel<Cliente> {
             return false; // Cliente já existe
         }
         clientes.add(cliente);
+        Logger.log("Cliente cadastrado" + cliente.getNome() + "(CPF: " + cliente.getCPF() + ")");
         return true;
     }
 
